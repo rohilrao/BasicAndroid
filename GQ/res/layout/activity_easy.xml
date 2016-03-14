@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EasyActivity" >
+
+    <TextView
+        android:id="@+id/QuestionTextViewE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/CheckAnswerButtonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/QuestionTextViewE"
+        android:layout_below="@+id/QuestionTextViewE"
+        android:layout_marginTop="84dp"
+        android:text="@string/CheckAnswer" />
+
+    <TextView
+        android:id="@+id/AnswerTextViewE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckAnswerButtonE"
+        android:layout_below="@+id/CheckAnswerButtonE"
+        android:layout_marginTop="48dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/NextquestionButtonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnswerTextViewE"
+        android:layout_below="@+id/AnswerTextViewE"
+        android:layout_marginTop="48dp"
+        android:text="@string/NextQuestion" />
+
+    <EditText
+        android:id="@+id/AnswerEditViewE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckAnswerButtonE"
+        android:layout_below="@+id/QuestionTextViewE"
+        android:layout_marginTop="28dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
